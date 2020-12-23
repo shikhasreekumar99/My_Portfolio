@@ -74,7 +74,7 @@ section .title::after{
     font-size: 20px;
     color: #5fbf99;
     padding: 0 5px;
-    width: 250px;
+    width: 277px;
     /*background: #fff;*/
     transform: translateX(-50%);
 }
@@ -233,7 +233,7 @@ section .title::after{
 /* about section styling */
 .about .title::after{
     content: "----Who i Am----";
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 .about .about-content .left{
     width: 45%;
@@ -280,7 +280,7 @@ section .title::after{
     color:#fff;
     background: #111;
     position: relative;
-    background-image: url("../images/bridge.jpg");
+    background-image: url("../images/image1.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -317,11 +317,12 @@ section .title::after{
 .projects .title::after{
    /* background: #111;*/
     content: "----What i Provide----";
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    /*background: #222*/
+    background: rgba(255,255,255,0.1);
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
@@ -355,7 +356,7 @@ section .title::after{
 
 .skills .title::after{
     content: "----What i Know----";
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -430,10 +431,10 @@ section .title::after{
 /* projects section styling */
 .projects .title::after{
     content: "----What i Completed----";
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 .projects .carousel .card{
-    background: #222;
+    background: rgba(255,255,255,0.1);
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -452,6 +453,11 @@ section .title::after{
 }
 .projects .carousel .card:hover .box{
     transform: scale(1.05);
+}
+.projects .carousel .card .text-col{
+    font-size: 21px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 .projects .carousel .card .text{
     font-size: 25px;
@@ -494,7 +500,7 @@ section .title::after{
 /* contact section styling */
 .contact .title::after{
     content: "----Get in Touch----";
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
