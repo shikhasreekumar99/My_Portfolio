@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Designer", "Developer", "Blogger", "Deployer", "Freelancer"],
+        strings: ["Designer", "Developer", "Deployer", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Designer", "Developer", "Blogger", "Deployer", "Freelancer"],
+        strings: ["Designer", "Developer", "Deployer", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -112,3 +112,26 @@ $(document).on('submit','#enquiry-form',function(e)
     }
     )
 })
+
+// $(".home").ripples({
+// 	resolution: 512,
+// 	dropRadius: 20,
+// 	perturbance: 0.04,
+// });
+
+    // $(".home").ripples();
+
+// $(".home").ripples({
+//     resolution: 500,
+// 				dropRadius: 20,
+// 				perturbance: 0.04
+//   });
+
+  function shikha_ripple(){		
+    jQuery('.rippledesign').ripples({
+            resolution: 500,
+            dropRadius: 20,
+            perturbance: 0.04
+        });
+       }
+    shikha_ripple();
