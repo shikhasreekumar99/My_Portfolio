@@ -39,23 +39,27 @@ section{
 .about, .services, .skills, .projects, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content, 
-.services .serv-content,
-.skills .skills-content,
+.about .about-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+.skills .skills-content,
+.services .serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Almendra', serif;
 }
 section .title::before{
     content: "";
@@ -101,10 +105,12 @@ section .title::after{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+    font-family: 'Almendra', serif;
 }
 .navbar .logo a span{
     color: #5fbf99;
     transition: all 0.3s ease;
+    font-family: 'Almendra', serif;
 }
 
 .navbar.sticky .logo a span{
@@ -117,10 +123,11 @@ section .title::after{
 .navbar .menu li a{
     display: block;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
+    font-family: 'Almendra', serif;
 }
 .navbar .menu li a:hover{
     color: #5fbf99;
@@ -141,7 +148,8 @@ section .title::after{
     height: 45px;
     width: 42px;
     background: #5fbf99;
-    right: 30px;
+    /* right: 30px; */
+    left: 15px;
     bottom: 10px;
     text-align: center;
     line-height: 45px;
@@ -163,11 +171,46 @@ section .title::after{
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
-
+.we-codcor .circle-animates{
+    width: 200px;
+    height: 200px;
+}
+@media (max-width: 1024px){
+.we-codcor .circle-animates {
+    width: 200px;
+    height: 200px;
+}
+}
+@media (max-width: 1200px){
+.we-codcor svg {
+    margin-top: 0;
+}
+}
+@media (max-width: 1440px){
+.we-codcor svg {
+    width: 300px;
+    height: 300px; 
+}
+}
+.circle-animates{
+  /* margin-top: -15%;
+  height:300px; */
+  margin-top: -3%;
+  height: 200px;
+  margin-left: -17%;
+}
 .design{
      z-index: 3;
 }
-  
+canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 /* home section styling */
 .home{
     position: relative;
@@ -296,6 +339,8 @@ section .title::after{
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    /* margin-top for animation */
+    margin-top: -65px !important;
     z-index: 1;
 }
 .services:before,
