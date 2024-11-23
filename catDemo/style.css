@@ -1,0 +1,45 @@
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+    background: black;
+}
+
+h1{
+    color: brown;
+    font-size: 50px;
+    display: block;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.app{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonGroup{
+    margin-top: 25%;
+}
+
+button{
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 30px;
+    background-color: yellow;
+    border: none;
+}
+
+.button--no{
+    right: 44%;
+}
+
+.button--yes{
+    left: 44%;
+}
+
+img{
+    margin-top: 10%;
+}
